@@ -1,0 +1,248 @@
+﻿@font-face {
+    font-family: Cocogoose;
+    src: url("Cocogoose.ttf");
+}
+h1, h2, h3 {
+    font-family: Cocogoose;
+    color: white;
+}
+body {
+    background-color: #85caee;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    /*font-family: 'Pacifico', cursive;
+    font-family: 'Roboto', sans-serif;*/
+}
+
+/* Title Section */
+.navbar {
+    font-family: Cocogoose;
+    font-size: 26px;
+    padding-top: 2rem;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+/* Sun and Moon toggle button */
+.switch-class {
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 68px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: #70C5F3;  Sun bg */
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 120px; /* sun/moon height*/
+    width: 120px;
+    left: 8px;
+    bottom: 8px;
+    background-color: #FFEE82; /*sun*/
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(52vw);
+    -ms-transform: translateX(52vw);
+    transform: translateX(52vw);
+}
+
+input:checked + .slider.round:before {
+    background-color: white;
+}
+
+#come-in {
+    font-family: 'Pacifico', cursive;
+}
+.convenient-store {
+    height: 90vh;
+    position: relative;
+}
+
+.convenient-store .inner-child {
+    background-color: #9ba4b5;
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    bottom:0px;
+    text-align: center;
+}
+#store-img {
+    position: relative;
+    height:350px;
+    top:-15rem;
+}
+
+/* About Me Section */
+
+#about-me {
+    height:100vh;
+    padding:10rem;
+    background-color: #ebebeb;
+}
+
+#about-me p {
+    font-size: 18px;
+    padding-top: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Project Section */
+
+#project-chips {
+    padding: 5%;
+    background-color: #ebebeb;
+}
+
+#project-chips h1 {
+    font-size: 5rem;
+    color: #303030;
+}
+
+.project-header {
+    color: #303030;
+}
+
+#project-chips .chips-imgs img:hover {
+    animation: shake 1s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-3deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(0deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(3deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-3deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(3deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(0deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(-3deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(0deg);
+    }
+}
+/* Skills Section */
+
+#skills-doc {
+    height: 100vh;
+}
+
+#skills-doc .container {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.skills-paper {
+    height: 90vh;
+    width: 33vw;
+    background-color: white;
+    padding-top: 2rem;
+    box-shadow: 5px 5px 5px 5px rgb(102, 102, 102);
+}
+
+.skills-paper h1 {
+    font-family: 'Montserrat', sans-serif;
+    padding: 2rem;
+}
+
+.skills-paper p {
+   font-family: 'Roboto', sans-serif;
+}
+
+.grid-skills {
+    padding-top:1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 90%;
+    column-gap: 1px;
+    background-color: gray;
+    width:80%;
+}
+
+.grid-container > div {
+    background-color: white;
+    text-align: center;
+    padding: 0;
+    font-size: 16px;
+}
+
+.skills-header {
+    grid-column: 1 / 3;
+    background-color: #61A8D6 !important;
+    font-weight: bold;
+    color: #ebebeb;
+}
+/*  Footer Section */
+.footer-section{
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+    align-content: center;
+    grid-auto-flow: column;
+  }
+
+.footer-icon{
+    color: #313639;
+}

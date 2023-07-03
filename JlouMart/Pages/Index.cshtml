@@ -1,0 +1,116 @@
+﻿@page
+@model IndexModel
+@{
+	ViewData["Title"] = "Home page";
+}
+
+<!--
+	Eventually we might want to change the way the images are added. Maybe store it in an array.
+-->
+<div class="convenient-store">
+	<div class="container">
+		<div class="row">
+			<div class="switch-class">
+				<label class="switch">
+					<input type="checkbox" name="moon">
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="text-center">
+		<h1><span id="come-in">Come in</span> we're</h1>
+		<h1 style="font-size:6rem">OPEN</h1>
+	</div>
+	<div class="inner-child">
+		<img src="~/Imports/img/store-day.png" alt="store.png" id="store-img">
+	</div>
+</div>
+
+<section id="about-me">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 text-center">
+				<img src="~/Imports/img/nametag.png" alt="nametag.png" style="transform: rotate(-5deg);">
+				<p align="justify">Hi welcome in! I'm Janilou Sy and I'm an aspiring Software Developer. When I was a young kid, I remember being fascinated with the digital world. I would always be online and wander around with my iPad with me (I was an iPad kid). As I got older, I decided to teach myself simple Photoshop and learn simple HTML for school. These has been the driving factors that inspired me to learn about programming. I hope that someday I can leave a mark on the world by being myself and be an inspiration to other people.</p>
+
+				<p><em> Fun fact about me: I love playing modern tetris.</em></p>
+			</div>
+			<div class="col-lg-6 text-center">
+				<img src="~/Imports/img/jlou-bt.png" alt="janilou.png" style="height:400px;">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="project-chips">
+	<div class="container">
+		<div class="row text-center project-header justify-content-center">
+			<h1>
+				<img src="~/Imports/img/font-shine.png" alt="shine.png" style="height:100px; width: 50px;transform: rotate(180deg);">
+				Our Best Selling Chips
+				<img src="~/Imports/img/font-shine.png" alt="shine.png" style="height:100px; width: 50px;">
+			</h1>
+			<p>These are some of the best selling "chips" at the store. <b>Click on a chip to see their Nutrition Facts.</b></p>
+		</div>
+		<div class="row text-center justify-content-center pb-5">
+			<a href="https://github.com/jamaye" class="btn btn-dark" style="color: white;width:10vw;" target="_blank">View Chips <i class="fa-brands fa-github fa-lg"></i></a>
+		</div>
+		<div class="chips-imgs row">
+			<div class="col-lg-4 text-center">
+				<img src="~/Imports/img/cine-chips-fr.png" style="height:400px;" onclick="this.src='/Imports/img/cine-chips-bk.png';" onmouseout="this.src='/Imports/img/cine-chips-fr.png';" />
+			</div>
+			<div class="col-lg-4 text-center">
+				<img src="~/Imports/img/tmp-chip-fr.png" style="height:400px;" onclick="this.src='/Imports/img/tmp-chip-bk.png';" onmouseout="this.src='/Imports/img/tmp-chip-fr.png';" />
+			</div>
+			<div class="col-lg-4 text-center">
+				<img src="~/Imports/img/WGS-chips-fr.png" style="height:400px;" onclick="this.src='/Imports/img/WGS-chips-bk.png';" onmouseout="this.src='/Imports/img/WGS-chips-fr.png';" />
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="skills-doc">
+	<div class="container">
+		<div class="skills-paper" style="cursor:pointer;" onClick="window.open('/Imports/Resume.pdf','_newtab');">
+			<div class="row justify-content-center">
+				<h1 style="color: #313639 ;">INVENTORY LIST</h1>
+			</div>
+			<div class="row justify-content-center">
+				<p style="color:#313639; font-size: 12px; font-style: italic;">Click on this Document to download Resume</p>
+			</div>
+			<div class="row" style="padding-left:4.5rem;">
+				<p>Name: <span style="font-family: 'Pacifico', cursive; font-size:1.5rem;">Janilou Sy</span></p>
+			</div>
+			<div class="row grid-skills justify-content-center">
+				<div class="grid-container">
+					<div class="skills-header">Skills</div>
+					<div class="counter1">1</div>
+					<div class="item1">Object-Oriented Programming in C++/C#/Java</div>
+					<div class="counter2" style="background-color: #C4E0F3;">2</div>
+					<div class="item2" style="background-color: #C4E0F3;">Web Apps using ASP.NET</div>
+					<div class="counter3">3</div>
+					<div class="item3">C Language</div>
+					<div class="counter4" style="background-color: #C4E0F3;">4</div>
+					<div class="item4" style="background-color: #C4E0F3;">JavaScript</div>
+					<div class="counter5">5</div>
+					<div class="item5">HTML/CSS/JS</div>
+					<div class="counter6" style="background-color: #C4E0F3;">6</div>
+					<div class="item6" style="background-color: #C4E0F3;">Git Version Control</div>
+					<div class="counter7">7</div>
+					<div class="item7">Photoshop</div>
+					<div class="skills-header">Operating Systems</div>
+					<div class="count1">1</div>
+					<div class="item8">Windows</div>
+					<div class="count2" style="background-color: #C4E0F3;">2</div>
+					<div class="item8" style="background-color: #C4E0F3;">Linux</div>
+					<div class="skills-header">IDE</div>
+					<div class="counter1">1</div>
+					<div class="item9">Visual Studio</div>
+					<div class="counter2" style="background-color: #C4E0F3;">2</div>
+					<div class="item10" style="background-color: #C4E0F3;">IntelliJ</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

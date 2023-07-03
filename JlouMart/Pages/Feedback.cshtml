@@ -1,0 +1,68 @@
+﻿@page
+@model JlouMart.Pages.FeedbackModel
+@{
+}
+
+@if (Model.errorMessage.Length > 0)
+{
+	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+		<strong>@Model.errorMessage</strong>
+	</div>
+}
+
+
+<style>
+	body {
+		font-family: 'Montserrat', sans-serif;
+		background-color: #85caee;
+		display: grid;
+		color: white;
+	}
+
+	h1 {
+		font-family: Cocogoose;
+	}
+
+	form {
+		margin: auto;
+		padding: 7rem;
+		height: 100vh;
+		width: 50vw;
+		height: 100vh;
+	}
+
+	.container {
+		padding: 30px;
+		background-color: #D77FA1;
+
+	}
+
+	input[type=text], input[type=submit], textarea, button {
+		width: 100%;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+
+</style>
+<form method="POST">
+
+	<div class="container text-center" style="border-radius: 25px 25px 0 0;">
+		<h1 styles="font-family: Cocogoose;">Thanks for visiting my website!</h1>
+		<p>I had fun building this website and I'm excited that I can deploy it and share it to the world! If you want to give me feedback, see bugs, or just talk to me ... fill up the form below!</p>
+	</div>
+	<div class="container" style="background-color:white">
+		<input asp-for="Respondent.Name" class="form-control" placeholder="Name" />
+		<span asp-validation-for="Respondent.Name" class="text-danger"></span>
+
+		<input asp-for="Respondent.Email" class="form-control" placeholder="Email" />
+		<span asp-validation-for="Respondent.Email" class="text-danger"></span>
+
+		<input asp-for="Respondent.Message" class="form-control" placeholder="Write something.." />
+		<span asp-validation-for="Respondent.Message" class="text-danger"></span>
+	</div>
+	<div class="container" style="border-radius: 0 0 25px 25px;">
+		<button type="submit" class="btn btn-primary">Send <i class="fa-regular fa-heart"></i></button>
+	</div>
+</form>

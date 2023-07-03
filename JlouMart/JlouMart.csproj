@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\Projects\" />
+    <Folder Include="wwwroot\Imports\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Imports\Cocogoose.ttf" />
+    <None Include="wwwroot\Imports\img\cine-chip-fr.jpg" />
+    <None Include="wwwroot\Imports\img\cine-chips-bk.png" />
+    <None Include="wwwroot\Imports\img\cine-chips-fr.png" />
+    <None Include="wwwroot\Imports\img\font shine.png" />
+    <None Include="wwwroot\Imports\img\font-shine.png" />
+    <None Include="wwwroot\Imports\img\jlou-bt.png" />
+    <None Include="wwwroot\Imports\img\nametag.png" />
+    <None Include="wwwroot\Imports\img\store-day.png" />
+    <None Include="wwwroot\Imports\img\store-nite.png" />
+    <None Include="wwwroot\Imports\img\tmp-chip-bk.png" />
+    <None Include="wwwroot\Imports\img\tmp-chip-fr.png" />
+    <None Include="wwwroot\Imports\img\tmp-chip.png" />
+    <None Include="wwwroot\Imports\img\WGS-chips-bk.png" />
+    <None Include="wwwroot\Imports\img\WGS-chips-fr.png" />
+    <None Include="wwwroot\Imports\Resume.pdf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
