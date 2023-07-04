@@ -39,8 +39,8 @@ namespace JlouMart.Pages
             {
                 _context.Respondents.Add(Respondent);
                 await _context.SaveChangesAsync();
-                return RedirectToPage("./Index");
-            }
+				return RedirectToPage("/Success", new { back = "Feedback" });
+			}
             else 
             {
                 //Do something better when email is used again.

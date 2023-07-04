@@ -36,7 +36,7 @@ namespace JlouMart.Pages
 			}
 
 			await _context.SaveChangesAsync();
-			return RedirectToPage("/Success");
+			return RedirectToPage("/Success", new { back = "SuperSecretPage" });
 		}
 	}
 }
