@@ -25,7 +25,7 @@ namespace JlouMart.Pages
 
 		public async Task<IActionResult> OnPostAsync(string email)
 		{
-			if(email == null)
+			if(email == null) 
 			{
 				return NotFound();
 			}
@@ -36,7 +36,7 @@ namespace JlouMart.Pages
 			}
 
 			await _context.SaveChangesAsync();
-			return RedirectToPage("/Success", new { back = "SuperSecretPage" });
+			return RedirectToPage("/Success", new { back = "1" });
 		}
 	}
 }

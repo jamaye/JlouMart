@@ -39,7 +39,7 @@ namespace JlouMart.Pages
             {
                 _context.Respondents.Add(Respondent);
                 await _context.SaveChangesAsync();
-				return RedirectToPage("/Success", new { back = "Feedback" });
+				return RedirectToPage("/Success", new { back = "2" });
 			}
             else 
             {

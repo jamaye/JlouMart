@@ -9,7 +9,10 @@ namespace JlouMart.Pages
         public string Back { get; set; }
         public void OnGet(string back)
         {
-            Back = back;
+            if(back == "1")
+                Back = "SuperSecretPage";
+            else if(back == "2")
+                Back = "Feedback";
         }
 		public void OnPost()
 		{
